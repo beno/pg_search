@@ -229,6 +229,12 @@ PgSearch.multisearch("Diagonal").find_each do |document|
 end
 ```
 
+To count search results, make sure you add the :all specifier to the count method.
+
+```ruby
+PgSearch.multisearch("Circle").count(:all)
+```
+
 #### Configuring multi-search
 
 PgSearch.multisearch can be configured using the same options as
